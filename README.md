@@ -1,35 +1,38 @@
-# React Login Form
+# React Login Form | Form ve Yönlendirme Arayüzü
 
-React ve Vite ile geliştirilmiş, giriş formu ve başarı sayfası içeren bir arayüz projesi.
+[English](#english) · [Canlı demo](https://login-form-react-indol.vercel.app/)
 
-## Proje yapısı
+## Türkçe
 
-- `src/App.jsx`: React Router ile `/` ve `/success` rotalarını tanımlar
-- `src/components/Login`: Giriş ekranı
+**React Login Form**, giriş formu ve başarı ekranı içeren bir frontend arayüz projesidir. **React bileşenleri, form etkileşimleri ve istemci tarafı yönlendirme** çalışmalarını sergiler.
+
+### Proje yapısı
+- `src/App.jsx`: React Router ile `/` ve `/success` rotaları
+- `src/components/Login`: Giriş formu
 - `src/components/Success`: Başarı ekranı
 
-## Teknolojiler
+**Teknolojiler:** React 19 · JavaScript · React Router · Axios · Bootstrap · Reactstrap · Vite · ESLint
 
-React, JavaScript, React Router, Axios, Bootstrap/Reactstrap ve Vite. Proje bağımlılıklarında Cypress test aracı da bulunur.
-
-## Kurulum
-
+### Kurulum ve kontrol
 ```bash
 npm install
 npm run dev
-```
-
-## Kontroller
-
-```bash
 npm run lint
 npm run build
 ```
 
-## Notlar
+**Canlı demo:** https://login-form-react-indol.vercel.app/
 
-Bu README, depoda doğrulanabilen proje yapısını tanımlar. Cypress bağımlılığının bulunması, testlerin başarıyla çalıştırıldığını tek başına göstermez. Gerçek bir sunucu tarafı kimlik doğrulaması veya üretim güvenliği iddiasında bulunulmamaktadır.
+> Bu proje bir **frontend arayüz örneğidir**; gerçek sunucu tarafı kimlik doğrulaması veya production seviyesinde oturum güvenliği sunduğu iddia edilmez. Cypress bağımlılığı mevcuttur ancak otomatik testlerin çalıştığı doğrulanmış değildir.
 
-## Geliştirme fikirleri
+## English
 
-Form doğrulama davranışlarını belgelemek, Cypress testlerini çalıştırılabilir bir komutla sunmak, ekran görüntüleri ve canlı demo bağlantısı eklemek.
+A React login-form interface with a success screen, showcasing **component composition, form interactions, and client-side navigation**.
+
+**Routes:** `/` and `/success`. **Stack:** React 19, JavaScript, React Router, Axios, Bootstrap, Reactstrap, Vite, ESLint.
+
+**Run:** `npm install && npm run dev` · **Checks:** `npm run lint && npm run build`
+
+**Live demo:** https://login-form-react-indol.vercel.app/
+
+> This is a frontend UI demonstration, not a verified production authentication system.
