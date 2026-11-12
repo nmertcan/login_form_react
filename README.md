@@ -1,16 +1,35 @@
-# React + Vite
+# React Login Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React ve Vite ile geliştirilmiş, giriş formu ve başarı sayfası içeren bir arayüz projesi.
 
-Currently, two official plugins are available:
+## Proje yapısı
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- `src/App.jsx`: React Router ile `/` ve `/success` rotalarını tanımlar
+- `src/components/Login`: Giriş ekranı
+- `src/components/Success`: Başarı ekranı
 
-## React Compiler
+## Teknolojiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React, JavaScript, React Router, Axios, Bootstrap/Reactstrap ve Vite. Proje bağımlılıklarında Cypress test aracı da bulunur.
 
-## Expanding the ESLint configuration
+## Kurulum
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+## Kontroller
+
+```bash
+npm run lint
+npm run build
+```
+
+## Notlar
+
+Bu README, depoda doğrulanabilen proje yapısını tanımlar. Cypress bağımlılığının bulunması, testlerin başarıyla çalıştırıldığını tek başına göstermez. Gerçek bir sunucu tarafı kimlik doğrulaması veya üretim güvenliği iddiasında bulunulmamaktadır.
+
+## Geliştirme fikirleri
+
+Form doğrulama davranışlarını belgelemek, Cypress testlerini çalıştırılabilir bir komutla sunmak, ekran görüntüleri ve canlı demo bağlantısı eklemek.
